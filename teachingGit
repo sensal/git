@@ -1,0 +1,7 @@
+sudo apt-get install git	安装Git
+git init	用来创建版本库
+git add	<file>		将文件添加到仓库
+git commit -m "some change" 把文件提交到仓库 -m 后面输入的是本次提交的说明
+git status	查看哪些文件被修改了
+git diff	查看做出了哪些修改
+

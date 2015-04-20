@@ -10,3 +10,6 @@ git reset --hard commit_id 	回到版本号为commit_id的版本
 git reflog 	查看那命令历史，确定回到那个版本
 git checkout -- file 	想直接丢弃工作去的内容,其实就是将版本库里的版本恢复到工作区
 git reset HEAD file	丢弃提交到暂存区的内容
+git remote add origin git@github.com:sensal/git.git	关联一个远程库
+git push -u origin master	第一次推送master分支的所有内容
+git push origin master		此后推送最新修改

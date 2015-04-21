@@ -23,3 +23,9 @@ git branch -d name 	删除分支
 git stash 	保存工作现场，去修复Bug
 git stash pop 	回到工作现场
 git branch -D name	强行删除分支。开发一个新的feature，最好新建一个分支
+git remote -v 	查看远程库信息
+git push origin branch-name	从本地推送分支
+git pull 	如果推送失败，使用此命令抓取远程的新提交
+git checkout -b branch-name origin/branch-name	在本地创建和远程分支对应的分支
+git branch --set-upstream branch-name origin/branch-name	建立本地分支和远程分支的关联
+

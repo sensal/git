@@ -31,3 +31,7 @@ git branch --set-upstream branch-name origin/branch-name	建立本地分支和�
 git tag name 	创建一个标签
 git tag -a tagname -m "blablabla..."	可以指定标签信息
 git tag -s tagname -m "blablabla..."	可以用PGP签名标签
+git push origin tagname	推送一个本地标签
+git push origin --tag	推送全部未推送过的本地标签
+git tag -d tagname	删除一个本地标签
+git push origin :refs/tags/tagname	删除远程标签

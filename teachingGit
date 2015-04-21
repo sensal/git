@@ -22,3 +22,4 @@ git merge name 	合并分支
 git branch -d name 	删除分支
 git stash 	保存工作现场，去修复Bug
 git stash pop 	回到工作现场
+git branch -D name	强行删除分支。开发一个新的feature，最好新建一个分支

@@ -20,3 +20,5 @@ git checkout name	切换分支
 git checkout -b name 	创建+切换分支
 git merge name 	合并分支
 git branch -d name 	删除分支
+git stash 	保存工作现场，去修复Bug
+git stash pop 	回到工作现场

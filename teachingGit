@@ -1,0 +1,37 @@
+sudo apt-get install git	安装Git
+git init	用来创建版本库
+git add	file	将文件添加到仓库
+git commit -m "some change" 把文件提交到仓库 -m 后面输入的是本次提交的说明
+git status	查看哪些文件被修改了
+git diff	查看做出了哪些修改
+git log --pretty=oneline	查看提交历史
+git reset --hard HEAD^ 	回到上一个版本，丢弃本版本库的修改
+git reset --hard commit_id 	回到版本号为commit_id的版本
+git reflog 	查看那命令历史，确定回到那个版本
+git checkout -- file 	想直接丢弃工作去的内容,其实就是将版本库里的版本恢复到工作区
+git reset HEAD file	丢弃提交到暂存区的内容
+git remote add origin git@github.com:sensal/git.git	关联一个远程库
+git push -u origin master	第一次推送master分支的所有内容
+git push origin master		此后推送最新修改
+git clone git@github.com:sensal/gitskills.git	克隆一个仓库
+git branch 	查看分支
+git branch name	创建分支
+git checkout name	切换分支
+git checkout -b name 	创建+切换分支
+git merge name 	合并分支
+git branch -d name 	删除分支
+git stash 	保存工作现场，去修复Bug
+git stash pop 	回到工作现场
+git branch -D name	强行删除分支。开发一个新的feature，最好新建一个分支
+git remote -v 	查看远程库信息
+git push origin branch-name	从本地推送分支
+git pull 	如果推送失败，使用此命令抓取远程的新提交
+git checkout -b branch-name origin/branch-name	在本地创建和远程分支对应的分支
+git branch --set-upstream branch-name origin/branch-name	建立本地分支和远程分支的关联
+git tag name 	创建一个标签
+git tag -a tagname -m "blablabla..."	可以指定标签信息
+git tag -s tagname -m "blablabla..."	可以用PGP签名标签
+git push origin tagname	推送一个本地标签
+git push origin --tag	推送全部未推送过的本地标签
+git tag -d tagname	删除一个本地标签
+git push origin :refs/tags/tagname	删除远程标签
